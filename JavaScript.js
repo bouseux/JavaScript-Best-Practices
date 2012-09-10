@@ -123,5 +123,5 @@ var mkv = (function($){
 	}
 
 	return me;
-}());
+}(jQuery));
 
