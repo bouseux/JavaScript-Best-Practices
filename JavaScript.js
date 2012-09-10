@@ -18,4 +18,21 @@ var namespace = (function() {
 namespace.sendFeedback();
 
 // undefined, no access to private variable
-alert(namespace.email);
+alert(Namespace.email);
+
+// Demonstration of prototype inheritance
+var Test = function() {
+	
+};
+
+// Demonstarting prototype
+var MyClass = new Test();
+
+// Add a newFunc function to all Test objects
+Test.prototype.newFunc = function() {
+	alert("new prototype function");
+};
+
+// Should display an alet
+MyClass.newFunc();
+
