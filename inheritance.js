@@ -31,9 +31,18 @@ Player.prototype.myType = function() {
 };
 
 var person1 = new Person();
+
+// shows an alert player constructor called
 var person2 = new Player();
 
+// alerts i am a person
 person1.myType();
+
+// alerts hello my name is
 person1.myName();
+
+// alerts i am a person
 person2.myType();
+
+// alerts hello my name is
 person2.myName();
