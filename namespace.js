@@ -18,4 +18,22 @@ var namespace = (function() {
 namespace.sendFeedback();
 
 // undefined, no access to private variable
-alert(Namespace.email);
+alert(namespace.email);
+
+
+// Module pattern with the ability to continously add functions
+var hw = (function(my) {
+    var _privateVariable = 'hello world';
+    
+    // add to homeaway function
+    my.sayHello = function() {
+        alert(_privateVariable);       
+    };
+        
+    return my;
+    
+}(hw || {}));
+       
+hw.sayHello();
+
+alert(hw._privateVariable);
